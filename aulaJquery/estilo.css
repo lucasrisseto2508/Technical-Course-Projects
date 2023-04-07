@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fg, .galeria {
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.fg img{
+    max-width: 90%;
+    max-height: 60vh;
+}
+
+.fp-ct {
+    display: flex;
+    max-height: 30vh;
+    
+}
+
+.fp-ct div{
+    flex: 1 0 200px;
+    margin: 10px;
+    height: 30vh;
+    box-shadow: 0 0 20px black;
+    transition: 0.3s;
+}
+.fp-ct div:hover{
+    box-shadow: 0 0 10px black;
+}
+
+
+.fp-ct div img{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 20vh;
+    cursor: pointer;
+}
+
+.fp-ct div p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
