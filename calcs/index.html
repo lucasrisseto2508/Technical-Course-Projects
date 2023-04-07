@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Geo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="libs/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="central">
+
+
+        <p class="title">Área do Retângulo</p>
+        <fieldset>
+            <img src="imgs/retangulo.jpg" alt="Retângulo">
+            <form>
+                <p>
+                    <label for="baseRetangulo">Base</label>
+                    <input type="number" name="baseRetangulo" id="baseRetangulo">
+                </p>
+                <p>
+                    <label for="alturaRetangulo">Altura</label>
+                    <input type="number" name="alturaRetangulo" id="alturaRetangulo">
+                </p>
+                <input type="button" value="Calcular"
+                    onclick="areaRetangulo(baseRetangulo.value,alturaRetangulo.value)">
+            </form>
+            <p id="resultRetangulo"></p>
+        </fieldset>
+
+
+
+
+
+
+        <p class="title">Área do Quadrado</p>
+        <fieldset>
+            <img src="imgs/quadrado.jpg" alt="quadrado">
+            <form>
+                <p>
+                    <label for="idBaseQuadrado">Lado</label>
+                    <input type="number" name="baseQuadrado" id="idBaseQuadrado">
+                </p>
+                <input type="button" value="Calcular" onclick="areaQuadrado(baseQuadrado.value)">
+            </form>
+            <p id="resultQuadrado"></p>
+        </fieldset>
+
+
+
+
+
+
+
+        <p class="title">Área do Trapézio</p>
+        <fieldset>
+            <img src="imgs/trapezio.jpg" alt="Trapézio">
+            <form>
+                <p>
+                    <label for="baseMaior">Base Maior</label>
+                    <input type="number" name="baseMaior" id="baseMaior">
+                </p>
+                <p>
+                    <label for="baseMenor">Base Menor</label>
+                    <input type="number" name="baseMenor" id="baseMenor">
+                </p>
+                <p>
+                    <label for="alturaTrapezio">Altura</label>
+                    <input type="number" name="h" id="alturaTrapezio">
+                </p>
+                <input type="button" value="Calcular" onclick="areaTrapezio(baseMaior+baseMenor.alturaTrapezio/2)">
+            </form>
+            <p id="resultTrapezio"></p>
+        </fieldset>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
