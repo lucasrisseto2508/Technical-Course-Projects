@@ -1,0 +1,43 @@
+.section1{
+   background: url(imgs/inicio.jpg);
+   background-size: cover;
+}
+.section2{
+   background: url(imgs/camping.jpg);
+   background-size: cover;
+}
+.section3{
+   background: url(imgs/Cachoeira-dos-3-Poços-Camburi.jpg);
+   background-size: cover;
+}
+.section4{
+   background: url(imgs/bloco.jpg);
+   background-size: cover;
+}
+section div {
+    font-family: fantasy;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+section img {
+    max-height: 50vh;
+  }
+  
+span {
+    font-size: 3em;
+    color:black;
+  }
+.button {
+    background-color: black;
+    border-bottom: 5px solid #000000;
+    text-shadow: 0px -2px #000000;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+  
