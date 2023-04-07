@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>IMC</title>
+</head>
+
+<body>
+    <form id="forms">
+    <fieldset id="fd">
+    <H2>CALCULO IMC</H2>
+    <H3>INFORME SEU PESO</H3>
+    <input type="text" name="" id="peso"><br>
+    <H3>INFORME SUA ALTURA</H3>
+    <input type="text" name="" id="altura"><br>
+    <BR></BR><input type="button" id="botao" value="calcular">
+    <p id="result"></p>
+    <p id="msg"></p>
+    </fieldset>
+</form>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+        $('#botao').click(function(){
+            var peso = $("#peso").val();
+            var alt = $("#altura").val();
+            var IMC = peso / (alt*alt);
+
+            var arr = IMC.toFixed(1);
+
+            IMC =   parseFloat(arr);
+            var hr = $('<hr>');
+            var spanimc = $('<span>').text('IMC: '+IMC);
+            $("#result").append(hr).append(spanimc);
+
+            if(IMC <= 18){
+                msg = "Voce esta abaixo do peso";
+            }else if(IMC>18 && IMC <=24){
+                msg = "voce esta com o peso ideal";
+            } else if (IMC>24 && IMC<=29){
+                msg = "voce esta acima do peso"
+            }else if (IMC > 29 ){
+                msg = "voce esta obeso"
+            }
+            $("#msg").text(msg);
+        })
+        
+    
+    </script>
+</body>
+
+</html>
